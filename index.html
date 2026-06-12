@@ -6,8 +6,8 @@
     <title>Home</title>
     <meta property="description" content="description">
     <link rel="icon" href="/assets/images/favicon.svg">
-    <script defer="true" type="module" src="/assets/js/index-DQrKKaqq.js"></script>
-    <link rel="stylesheet" href="/assets/styles/bundle-BopUVcfo.css">
+    <script defer="true" type="module" src="/assets/js/index-DMkLSOUP.js"></script>
+    <link rel="stylesheet" href="/assets/styles/bundle-91z55GmU.css">
   </head>
   <body>
     <div class="preloader is-visible" data-preloader="true">
@@ -16,7 +16,7 @@
     <div class="wrapper">
       <section class="home">
         <header class="content-grid home__header" data-header="true">
-          <button class="home__navigation-toggle" type="button" data-header-menu-button="true">
+          <button class="home__navigation-toggle" type="button" data-header-menu-button-toggle="true">
             <svg>
               <use href="/assets/sprites/sprite-uJFGf97q.svg#menu"></use>
             </svg>
@@ -24,18 +24,24 @@
               <use href="/assets/sprites/sprite-uJFGf97q.svg#cross"></use>
             </svg>
           </button>
-          <nav class="home__navigation" data-header-menu="true">
-            <ul class="home__navigation-links">
-              <li class="home__navigation-item">
-                <a href="#structure" class="home__navigation-link" data-header-menu-button="true" data-header-menu-button-close="true">Структура</a>
-              </li>
-              <li class="home__navigation-item">
-                <a href="#brands" class="home__navigation-link" data-header-menu-button="true" data-header-menu-button-close="true">Бренды</a>
-              </li>
-              <li class="home__navigation-item">
-                <a href="#contacts" class="home__navigation-link" data-header-menu-button="true" data-header-menu-button-close="true">Контакты</a>
-              </li>
-            </ul>
+          <nav class="navigation home__navigation" data-header-menu="true">
+            <div class="navigation__container">
+              <div class="navigation__scroll-content">
+                <div class="navigation__body">
+                  <ul class="home__navigation-links">
+                    <li class="home__navigation-item">
+                      <a href="#structure" class="home__navigation-link" data-header-menu-button-close="true">Структура</a>
+                    </li>
+                    <li class="home__navigation-item">
+                      <a href="#brands" class="home__navigation-link" data-header-menu-button-close="true">Бренды</a>
+                    </li>
+                    <li class="home__navigation-item">
+                      <a href="#contacts" class="home__navigation-link" data-header-menu-button-close="true">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </nav>
         </header>
         <div class="home__swiper swiper" data-home-swiper="true">
@@ -76,26 +82,33 @@
         </div>
       </section>
       <section class="content-grid statistic">
-        <div class="statistic__items">
+        <div class="statistic__items" data-counter-animation="true" data-counter-animation-duration="1500" data-counter-animation-threshold="0.5">
           <div class="statistic__item">
-            <strong class="statistic__label">2 000<span class="statistic__label-prefix"> тонн</span>
+            <strong class="statistic__label">
+              <span data-counter-animation-target="2000">0</span>
+              <span class="statistic__label-prefix"> тонн</span>
             </strong>
             <p class="statistic__text">МОЛОКА И СЫВОРОТКИ
               <br> ПЕРЕРАБАТЫВАЕМ В СУТКИ
             </p>
           </div>
           <div class="statistic__item">
-            <strong class="statistic__label">500<span class="statistic__label-prefix"> млн $</span>
+            <strong class="statistic__label">
+              <span data-counter-animation-target="500">0</span>
+              <span class="statistic__label-prefix"> млн $</span>
             </strong>
             <p class="statistic__text">ОБОРОТ В ГОД</p>
           </div>
           <div class="statistic__item">
-            <strong class="statistic__label">12<span class="statistic__label-prefix"> млн $</span>
+            <strong class="statistic__label">
+              <span data-counter-animation-target="12">0</span>
+              <span class="statistic__label-prefix"> млн $</span>
             </strong>
             <p class="statistic__text">ИНВЕСТИЦИЙ В ГОД</p>
           </div>
           <div class="statistic__item">
-            <strong class="statistic__label">&gt; 4 000</strong>
+            <strong class="statistic__label">&gt; <span data-counter-animation-target="4000">0</span>
+            </strong>
             <p class="statistic__text">СОТРУДНИКОВ В ГРУППЕ</p>
           </div>
         </div>
@@ -106,14 +119,14 @@
           <source srcset="/assets/images/features/bg_01.webp" type="image/webp">
           <img src="/assets/images/features/bg_01.png" alt="background">
         </picture>
-        <div class="features__head">
+        <div class="features__head" data-aos="fade-up">
           <h1 class="title">EXPONENTA GROUP В ЦИФРАХ</h1>
           <span class="features__slogan">Мы создаем уникальные продукты, которые меняют мир к лучшему,
             <br>повышают качество жизни и укрепляют здоровье будущих поколений.
           </span>
         </div>
         <div class="features__items">
-          <div class="features__item">
+          <div class="features__item" data-aos="fade-right">
             <span class="features__label">B2C</span>
             <ul class="features__statistics">
               <li class="features__statistics-item">
@@ -128,7 +141,7 @@
               </li>
             </ul>
           </div>
-          <div class="features__item">
+          <div class="features__item" data-aos="fade-left">
             <span class="features__label">Производство продуктов питания и сырья</span>
             <ul class="features__statistics features__statistics_no-between">
               <li class="features__statistics-item">
@@ -142,7 +155,7 @@
               </li>
             </ul>
           </div>
-          <div class="features__item">
+          <div class="features__item" data-aos="flip-up">
             <span class="features__label">HoReCa</span>
             <ul class="features__statistics">
               <li class="features__statistics-item">
@@ -159,7 +172,7 @@
           </div>
         </div>
         <div class="features__mini-items">
-          <div class="features__item">
+          <div class="features__item" data-aos="zoom-in-up">
             <span class="features__label">Консалтинг</span>
             <ul class="features__statistics">
               <li class="features__statistics-item">
@@ -169,7 +182,7 @@
               </li>
             </ul>
           </div>
-          <div class="features__item features__item_image">
+          <div class="features__item features__item_image" data-aos="fade-up-left">
             <span class="features__label">Животноводство</span>
             <ul class="features__statistics">
               <li class="features__statistics-item">
@@ -187,36 +200,24 @@
       </section>
       <section id="structure" class="content-grid structure">
         <div class="structure__body">
-          <h1 class="structure__title title title_accent">СТРУКТУРА EXPONENTA GROUP</h1>
+          <h1 class="structure__title title title_accent" data-aos="fade-down">СТРУКТУРА EXPONENTA GROUP</h1>
           <div class="structure__items">
-            <div class="structure__item">
+            <div class="structure__item" data-aos="zoom-in-up" data-aos-delay="0">
               <picture class="structure__image">
                 <source srcset="/assets/images/structure/image_01.webp" type="image/webp">
                 <img src="/assets/images/structure/image_01.png" alt="preview">
               </picture>
               <span class="structure__label">ЖИВОТНОВОДСТВО</span>
               <ul class="structure__list">
-                <li>
-                  <a href="/">ООО «АФ МОДУЛЬ»</a>
-                </li>
-                <li>
-                  <a href="/">ОАО «ВОСХОД АГРО»</a>
-                </li>
-                <li>
-                  <a href="/">ОАО «ГОРЕЦКОЕ» (МГ)</a>
-                </li>
-                <li>
-                  <a href="/">ОАО «МАСЛАКИ» (МГ)</a>
-                </li>
-                <li>
-                  <a href="/">КСУП «НОВЫЙ ПУТЬ</a>
-                </li>
-                <li>
-                  <a href="/">АГРО» (БС)</a>
-                </li>
+                <li>ООО «АФ МОДУЛЬ»</li>
+                <li>ОАО «ВОСХОД АГРО»</li>
+                <li>ОАО «ГОРЕЦКОЕ» (МГ)</li>
+                <li>ОАО «МАСЛАКИ» (МГ)</li>
+                <li>КСУП «НОВЫЙ ПУТЬ</li>
+                <li>АГРО» (БС)</li>
               </ul>
             </div>
-            <div class="structure__item">
+            <div class="structure__item" data-aos="zoom-in-up" data-aos-delay="100">
               <picture class="structure__image">
                 <source srcset="/assets/images/structure/image_02.webp" type="image/webp">
                 <img src="/assets/images/structure/image_02.png" alt="preview">
@@ -224,74 +225,56 @@
               <span class="structure__label">ПРОИЗВОДСТВО</span>
               <ul class="structure__list">
                 <li>
-                  <a href="/">ОАО «МОЛОЧНЫЕ ГОРКИ»</a>
+                  <a href="https://milkhills.by/" target="_blank" rel="noreferrer">ОАО «МОЛОЧНЫЕ ГОРКИ»</a>
+                </li>
+                <li>ИООО «ГПК»</li>
+                <li>ИООО «ГПК» Витебск</li>
+                <li>
+                  <a href="https://belsyr.by/" target="_blank" rel="noreferrer">СООО «БЕЛСЫР»</a>
+                </li>
+                <li>ООО «КМСЗ»</li>
+                <li>
+                  <a href="https://kirovskpk.by/" target="_blank" rel="noreferrer">ИООО «КПК»</a>
+                </li>
+                <li>ООО «АМК»</li>
+                <li>
+                  <a href="http://akdimol.by/" target="_blank" rel="noreferrer">ООО «АКДИМОЛ»</a>
                 </li>
                 <li>
-                  <a href="/">ИООО «ГПК»</a>
+                  <a href="https://trbtmk.ru/" target="_blank" rel="noreferrer">ООО «ТМК»</a>
                 </li>
                 <li>
-                  <a href="/">ИООО «ГПК» Витебск</a>
-                </li>
-                <li>
-                  <a href="/">СООО «БЕЛСЫР»</a>
-                </li>
-                <li>
-                  <a href="/">ООО «КМСЗ»</a>
-                </li>
-                <li>
-                  <a href="/">ИООО «КПК»</a>
-                </li>
-                <li>
-                  <a href="/">ООО «АМК»</a>
-                </li>
-                <li>
-                  <a href="/">ООО «АКДИМОЛ»</a>
-                </li>
-                <li>
-                  <a href="/">ООО «ТМК»</a>
-                </li>
-                <li>
-                  <a href="/">ООО «ТМК» Грузия</a>
+                  <a href="http://tmf.ge/" target="_blank" rel="noreferrer">ООО «ТМК» Грузия</a>
                 </li>
               </ul>
             </div>
-            <div class="structure__item">
+            <div class="structure__item" data-aos="zoom-in-up" data-aos-delay="200">
               <picture class="structure__image">
                 <source srcset="/assets/images/structure/image_03.webp" type="image/webp">
                 <img src="/assets/images/structure/image_03.png" alt="preview">
               </picture>
               <span class="structure__label">B2B И КОНСАЛТИНГ</span>
               <ul class="structure__list">
+                <li>ООО «БЕНЕФИТ КОНСАЛТ»</li>
+                <li>ООО «АЛС ИНВЕСТ»</li>
                 <li>
-                  <a href="/">ООО «БЕНЕФИТ КОНСАЛТ»</a>
+                  <a href="https://technosolex.by/" target="_blank" rel="noreferrer">ООО «ТЕХНОСОЛЕКС ПРОЕКТ»</a>
                 </li>
                 <li>
-                  <a href="/">ООО «АЛС ИНВЕСТ»</a>
+                  <a href="https://miltex.by/" target="_blank" rel="noreferrer">ООО «МИЛТЕКС»</a>
+                </li>
+                <li>ООО «В2В ТРЕЙД»</li>
+                <li>
+                  <a href="https://aftech.by/" target="_blank" rel="noreferrer">УП «АФ ТЕХНОЛОДЖИ»</a>
                 </li>
                 <li>
-                  <a href="/">ООО &quot;ТЕХНОСОЛЕКС ПРОЕКТ&quot;</a>
+                  <a href="https://neofood.by/" target="_blank" rel="noreferrer">ООО «НЕОФУД»</a>
                 </li>
-                <li>
-                  <a href="/">ООО «МИЛТЕКС»</a>
-                </li>
-                <li>
-                  <a href="/">ООО «В2В ТРЕЙД»</a>
-                </li>
-                <li>
-                  <a href="/">УП «АФ ТЕХНОЛОДЖИ</a>
-                </li>
-                <li>
-                  <a href="/">ООО «НЕОФУД»</a>
-                </li>
-                <li>
-                  <a href="/">ИООО «ЛАМИФОЙЛ»</a>
-                </li>
-                <li>
-                  <a href="/">ООО «ПРОЛАЙН ТСК»</a>
-                </li>
+                <li>ИООО «ЛАМИФОЙЛ»</li>
+                <li>ООО «ПРОЛАЙН ТСК»</li>
               </ul>
             </div>
-            <div class="structure__item">
+            <div class="structure__item" data-aos="zoom-in-up" data-aos-delay="300">
               <picture class="structure__image">
                 <source srcset="/assets/images/structure/image_04.webp" type="image/webp">
                 <img src="/assets/images/structure/image_04.png" alt="preview">
@@ -299,14 +282,14 @@
               <span class="structure__label">СПОРТ И ОБЩЕСТВО</span>
               <ul class="structure__list">
                 <li>
-                  <a href="/">СООО «БЕЛОРУССКАЯ ФЕДЕРАЦИЯ ПАНКРАТИОНА И СМЕШАННЫХ БОЕВЫХ ЕДИНОБОРСТВ»</a>
+                  <a href="https://www.pankrationuww.by/" target="_blank" rel="noreferrer">СООО «БЕЛОРУССКАЯ ФЕДЕРАЦИЯ ПАНКРАТИОНА И СМЕШАННЫХ БОЕВЫХ ЕДИНОБОРСТВ»</a>
                 </li>
                 <li>
-                  <a href="/">АКАДЕМИЯ ММА В БЕЛАРУСИ</a>
+                  <a href="https://academymmaclub.by/" target="_blank" rel="noreferrer">АКАДЕМИЯ ММА В БЕЛАРУСИ</a>
                 </li>
               </ul>
             </div>
-            <div class="structure__item">
+            <div class="structure__item" data-aos="zoom-in-up" data-aos-delay="400">
               <picture class="structure__image">
                 <source srcset="/assets/images/structure/image_05.webp" type="image/webp">
                 <img src="/assets/images/structure/image_05.png" alt="preview">
@@ -314,14 +297,14 @@
               <span class="structure__label">HoReCa</span>
               <ul class="structure__list">
                 <li>
-                  <a href="/">ООО «РЕСТОРАН - ПИВОВАРНЯ «ДРУЗЬЯ»</a>
+                  <a href="https://druzya.by/" target="_blank" rel="noreferrer">ООО «РЕСТОРАН - ПИВОВАРНЯ «ДРУЗЬЯ»</a>
                 </li>
                 <li>
-                  <a href="/">ТПУП «MAK. БАЙ» ex. McDonald’s</a>
+                  <a href="https://mak.by/" target="_blank" rel="noreferrer">ТПУП «MAK. БАЙ» ex. McDonald’s</a>
                 </li>
               </ul>
             </div>
-            <div class="structure__item">
+            <div class="structure__item" data-aos="zoom-in-up" data-aos-delay="500">
               <picture class="structure__image">
                 <source srcset="/assets/images/structure/image_06.webp" type="image/webp">
                 <img src="/assets/images/structure/image_06.png" alt="preview">
@@ -329,10 +312,10 @@
               <span class="structure__label">ДИСТРИБУЦИЯ</span>
               <ul class="structure__list">
                 <li>
-                  <a href="/">ООО «ТОРГОВЫЙ ДОМ «МОЛОЧНЫЕ ГОРКИ»</a>
+                  <a href="https://tdmg.by/" target="_blank" rel="noreferrer">ООО «ТОРГОВЫЙ ДОМ «МОЛОЧНЫЕ ГОРКИ»</a>
                 </li>
                 <li>
-                  <a href="/">ООО «СЛАВЯНА»</a>
+                  <a href="https://slavyanatrade.ru/" target="_blank" rel="noreferrer">ООО «СЛАВЯНА»</a>
                 </li>
               </ul>
             </div>
@@ -340,54 +323,54 @@
         </div>
       </section>
       <section class="content-grid main-activity">
-        <h1 class="main-activity__title title title_accent">ОСНОВНОЙ ВИД ДЕЯТЕЛЬНОСТИ EXPONENTA GROUP -</h1>
-        <span class="main-activity__label label">ПРОИЗВОДСТВО ПРОДУКТОВ ПИТАНИЯ И СЫРЬЯ</span>
+        <h1 class="main-activity__title title title_accent" data-aos="fade-down">ОСНОВНОЙ ВИД ДЕЯТЕЛЬНОСТИ EXPONENTA GROUP —</h1>
+        <span class="main-activity__label label" data-aos="slide-up">ПРОИЗВОДСТВО ПРОДУКТОВ ПИТАНИЯ И СЫРЬЯ</span>
         <div class="main-activity__features">
-          <div class="main-activity__feature">
+          <div class="main-activity__feature" data-aos="fade-right">
             <strong>01</strong>
             <p>Инвестиционные проекты, строительство и запуск новых производственных площадок</p>
           </div>
-          <div class="main-activity__feature">
+          <div class="main-activity__feature" data-aos="flip-up">
             <strong>02</strong>
             <p>Современные технологии, высокотехнологичное оборудование</p>
           </div>
-          <div class="main-activity__feature">
+          <div class="main-activity__feature" data-aos="fade-left">
             <strong>03</strong>
             <p>Инновационные и востребованные на рынке товары с высокой добавленной стоимостью</p>
           </div>
         </div>
         <div class="main-activity__gallery">
-          <picture class="main-activity__image main-activity__image_01">
+          <picture class="main-activity__image main-activity__image_01" data-aos="zoom-in-up">
             <source srcset="/assets/images/main-activity/image_01.webp" type="image/webp">
             <img src="/assets/images/main-activity/image_01.png" alt="products">
           </picture>
-          <picture class="main-activity__image main-activity__image_02">
+          <picture class="main-activity__image main-activity__image_02" data-aos="zoom-in-up">
             <source srcset="/assets/images/main-activity/image_02.webp" type="image/webp">
             <img src="/assets/images/main-activity/image_02.png" alt="products">
           </picture>
-          <picture class="main-activity__image main-activity__image_03">
+          <picture class="main-activity__image main-activity__image_03" data-aos="zoom-in-up">
             <source srcset="/assets/images/main-activity/image_03.webp" type="image/webp">
             <img src="/assets/images/main-activity/image_03.png" alt="products">
           </picture>
-          <picture class="main-activity__image main-activity__image_04">
+          <picture class="main-activity__image main-activity__image_04" data-aos="zoom-in-up">
             <source srcset="/assets/images/main-activity/image_04.webp" type="image/webp">
             <img src="/assets/images/main-activity/image_04.png" alt="products">
           </picture>
         </div>
         <div class="main-activity__gallery main-activity__gallery_bottom">
-          <picture class="main-activity__image main-activity__image_05">
+          <picture class="main-activity__image main-activity__image_05" data-aos="zoom-in-up">
             <source srcset="/assets/images/main-activity/image_05.webp" type="image/webp">
             <img src="/assets/images/main-activity/image_05.png" alt="products">
           </picture>
-          <picture class="main-activity__image main-activity__image_06">
+          <picture class="main-activity__image main-activity__image_06" data-aos="zoom-in-up">
             <source srcset="/assets/images/main-activity/image_06.webp" type="image/webp">
             <img src="/assets/images/main-activity/image_06.png" alt="products">
           </picture>
-          <picture class="main-activity__image main-activity__image_07">
+          <picture class="main-activity__image main-activity__image_07" data-aos="zoom-in-up">
             <source srcset="/assets/images/main-activity/image_07.webp" type="image/webp">
             <img src="/assets/images/main-activity/image_07.png" alt="products">
           </picture>
-          <picture class="main-activity__image main-activity__image_08">
+          <picture class="main-activity__image main-activity__image_08" data-aos="zoom-in-up">
             <source srcset="/assets/images/main-activity/image_08.webp" type="image/webp">
             <img src="/assets/images/main-activity/image_08.png" alt="products">
           </picture>
@@ -404,8 +387,8 @@
       <section class="content-grid international-partners">
         <img class="full-width" src="/assets/images/decor_02.svg" alt="decor">
         <div class="international-partners__body">
-          <h1 class="international-partners__title title title_accent">МЕЖДУНАРОДНЫЕ ПАРТНЁРЫ EXPONENTA GROUP</h1>
-          <picture class="international-partners__all-icons">
+          <h1 class="international-partners__title title title_accent" data-aos="fade-down">МЕЖДУНАРОДНЫЕ ПАРТНЁРЫ EXPONENTA GROUP</h1>
+          <picture class="international-partners__all-icons" data-aos="zoom-in-up">
             <source srcset="/assets/images/international-partners/logos_01.webp" type="image/webp">
             <img src="/assets/images/international-partners/logos_01.png" alt="logos">
           </picture>
@@ -413,13 +396,13 @@
         <img class="full-width" src="/assets/images/decor_03.svg" alt="decor">
       </section>
       <section class="content-grid world-map">
-        <h1 class="world-map__title title title_accent">ГЕОГРАФИЯ ПАРТНЁРОВ EXPONENTA GROUP</h1>
-        <img src="/assets/images/world-map.svg" class="world-map__image" alt="world map">
+        <h1 class="world-map__title title title_accent" data-aos="zoom-in-down" data-aos-delay="300">ГЕОГРАФИЯ ПАРТНЁРОВ EXPONENTA GROUP</h1>
+        <img src="/assets/images/world-map.svg" class="world-map__image" alt="world map" data-aos="zoom-in-down" data-aos-duration="1000">
       </section>
       <footer class="content-grid footer">
         <img class="full-width footer__decor" src="/assets/images/decor_02.svg" alt="decor">
-        <h1 class="footer__title title">МЫ ВСЕГДА ГОТОВЫ ОБСУДИТЬ СОТРУДНИЧЕСТВО</h1>
-        <div id="contacts" class="footer__tab-actions">
+        <h1 class="footer__title title" data-aos="fade-up">МЫ ВСЕГДА ГОТОВЫ ОБСУДИТЬ СОТРУДНИЧЕСТВО</h1>
+        <div id="contacts" class="footer__tab-actions" data-aos="flip-up">
           <button class="footer__tab-action is-active" type="button" data-tab-default="true" data-tab="organizations" data-tab-button="manufacturers">Производители</button>
           <button class="footer__tab-action" type="button" data-tab-default="true" data-tab="organizations" data-tab-button="distributors">Дистрибьюторы</button>
           <button class="footer__tab-action" type="button" data-tab-default="true" data-tab="organizations" data-tab-button="sports">Спорт и общество</button>
